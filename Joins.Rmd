@@ -1,0 +1,57 @@
+---
+title: "Relación de datos, Joins"
+author: "Fabián Almirall Marchena"
+date: "2025-05-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Conjutos de datos
+ A continuación se definen algunos conseptos básicos de los conjuntos de datos:
+ 
+### Entidad 
+
+Definición: Representa una cosa (persona, lugar, evento) sobre la que se guardan. 
+
+### Atributos 
+
+Definición: Propiedades que describen a la entidad. 
+
+### Relaciones
+
+Definición: Es la asociacion entre entidades. 
+
+
+
+## Relaciones entre conjutos 
+
+
+Se establecen 
+
+
+## Joins con dplyr
+
+Se procede a trabajar con lso siguientes datps 
+```{r}
+remove.packages(dplyr)
+install.packages("dplyr")
+library (dplyr)
+
+#clientes
+clientes = data.frame (
+  id_cliente = c(1, 2, 3),
+  producto = c("Ana", "Luis", "María")
+)
+
+# Pedidos 
+pedidos = data.frame(
+  id_cliente = c(2, 3, 4),
+  producto = c("Libro", "Lápiz", "Cuaderno")
+)
+```
+
+
+
